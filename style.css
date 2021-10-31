@@ -10,6 +10,9 @@ body {
     text-align: left;
     color: #333;
 }
+.home_page {
+
+}
 .the_header {
     display: flex;
     flex-direction: column;
@@ -20,6 +23,7 @@ body {
     color: black;
     margin-right: 275px;
     display: block;
+    vertical-align: middle;
 }
 .recherche_loc .input_text input {
     border: 0;
@@ -312,6 +316,43 @@ ul {
     text-decoration: none;
     color: white;
 }
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    animation: section-loader spin 2s linear infinite;
+    animation-delay: 3s;
+
+  }
+@keyframes spin {
+    0% { transform: rotate(0deg);
+     }
+    100% { transform: rotate(360deg); }
+  }
+  @keyframes section-loader {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+#loader {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+}
+#loader:before {
+    animation-delay: 3s;
+}
 .fa-arrow-left:before {
     content: "\f060";
 }
@@ -509,6 +550,11 @@ ul {
         padding: 15px 0 15px 15px;
         width: 100%;
     }
+    .the_meu_prices, h4, .plat {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
     .footer_logo {
         max-width: none;
         text-align: center;
@@ -517,9 +563,7 @@ ul {
         text-align: center;
     }
     .the_menu_details {
-        display: flex;
         flex-flow: row wrap;
-        align-items: center;
         justify-content: space-between;
         width: 100%;
     }
@@ -531,6 +575,14 @@ ul {
         flex: 25px;
         margin-left: 15px;
     }
+}
+@media only screen and (min-width: 1200px)
+.the_menu_details {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
         
         
         
