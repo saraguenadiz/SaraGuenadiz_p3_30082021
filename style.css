@@ -10,9 +10,6 @@ body {
     text-align: left;
     color: #333;
 }
-.home_page {
-
-}
 .the_header {
     display: flex;
     flex-direction: column;
@@ -250,8 +247,10 @@ main {
     border-top-right-radius: 35px;
 }
 .menu_name {
+    font-family: "Shrikhand",cursive;
     font-weight: normal;
     padding: 20px 0px 20px 20px;
+    font-size: 22px;
 }
 .the_menu_plats {
     padding: 20px;
@@ -297,6 +296,7 @@ h4 {
 .plat {
     font-size: 18px;
     font-weight: bold;
+    color: black;
 }
 .the_footer {
     background-color: #333;
@@ -606,11 +606,6 @@ ul {
     .footer_details {
         text-align: center;
     }
-    .the_menu_details {
-        flex-flow: row wrap;
-        justify-content: space-between;
-        width: 100%;
-    }
     .sub_title {
         padding: 15px 0 15px 15px;
         width: 100%;
@@ -619,14 +614,54 @@ ul {
         flex: 25px;
         margin-left: 15px;
     }
+    .the_menu_details_1 {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        }
+    .the_menu_details_2{
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        }
+    .the_menu_details_3 {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        }
 }
-@media only screen and (min-width: 1200px)
-.the_menu_details {
-    display: flex;
+@media only screen and (min-width: 1200px) {
+    .box_img {
+        width: 40%;
+    }
+    .restaurants_img {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: wrap;
+        padding: 15px;
+        height: 100%;
+    }
+.the_menu_details_1 {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 70%;
+    }
+.the_menu_details_2{
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    }
+.the_menu_details_3 {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
     }
 }
         
